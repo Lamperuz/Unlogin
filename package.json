@@ -1,6 +1,6 @@
 {
   "name": "@lamperuz/unlogin",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "type": "module",
   "scripts": {
     "dev": "node_modules/.bin/vite",
@@ -30,12 +30,12 @@
   },
   "license": "MIT",
   "homepage": "https://github.com/Lamperuz/Unlogin#readme",
-  "main": "dist/idle.js",
-  "module": "dist/idle.js",
+  "main": "dist/unlogin.js",
+  "module": "dist/unlogin.js",
   "exports": {
     ".": {
-      "import": "./dist/idle.js",
-      "require": "./dist/idle.umd.js"
+      "import": "./dist/unlogin.js",
+      "require": "./dist/unlogin.umd.js"
     }
   },
   "files": [
