@@ -4,7 +4,7 @@ const r = (e, t) => {
   clearTimeout(o), o = setTimeout(() => {
     t();
   }, e);
-}, c = (e, t = 2e3) => {
+}, c = (e, t = 3e4) => {
   if (window) {
     const n = { passive: !0 };
     for (const s of i)

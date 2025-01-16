@@ -9,7 +9,7 @@ const reset = (delay: number, cb: () => void) => {
   }, delay)
 }
 
-const initIdle = (cb: () => void, delay: number = 2000) => {
+const initIdle = (cb: () => void, delay: number = 30000) => {
   if (window) {
     const listenerOptions = { passive: true }
 
