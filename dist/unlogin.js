@@ -4,21 +4,21 @@ const r = (e, t) => {
   clearTimeout(o), o = setTimeout(() => {
     t();
   }, e);
-}, d = (e = 6e4, t) => {
+}, c = (e, t = 2e3) => {
   if (window) {
-    const s = { passive: !0 };
-    for (const n of i)
+    const n = { passive: !0 };
+    for (const s of i)
       window.addEventListener(
-        n,
+        s,
         () => {
-          r(e, t);
+          r(t, e);
         },
-        s
+        n
       );
   }
-}, c = {
-  initIdle: d
+}, d = {
+  initIdle: c
 };
 export {
-  c as default
+  d as default
 };

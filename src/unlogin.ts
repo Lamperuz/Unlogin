@@ -9,9 +9,8 @@ const reset = (delay: number, cb: () => void) => {
   }, delay)
 }
 
-const initIdle = (delay: number = 60000, cb: () => void) => {
+const initIdle = (cb: () => void, delay: number = 2000) => {
   if (window) {
-    const document = window.document
     const listenerOptions = { passive: true }
 
     for (const event of events) {
