@@ -1,0 +1,49 @@
+{
+  "name": "@lamperuz/unlogin",
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "node_modules/.bin/vite",
+    "build": "vite build"
+  },
+  "devDependencies": {
+    "@types/node": "^22.9.0",
+    "typescript": "^5.6.3",
+    "@rushstack/eslint-patch": "^1.2.0",
+    "@tsconfig/node18": "^2.0.1",
+    "eslint": "^8.39.0",
+    "eslint-plugin-vue": "^9.11.0",
+    "npm-run-all": "^4.1.5",
+    "prettier": "^2.8.8",
+    "vite": "^4.3.9",
+    "vue-tsc": "^1.6.5"
+  },
+  "dependencies": {
+    "vite": "^5.4.10"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Lamperuz/Unlogin"
+  },
+  "bugs": {
+    "url": "https://github.com/Lamperuz/Unlogin/issues"
+  },
+  "license": "MIT",
+  "homepage": "https://github.com/Lamperuz/Unlogin#readme",
+  "main": "dist/idle.js",
+  "module": "dist/idle.js",
+  "exports": {
+    ".": {
+      "import": "./dist/idle.js",
+      "require": "./dist/idle.umd.js"
+    }
+  },
+  "files": [
+    "/dist",
+    "/index.js"
+  ],
+  "keywords": [
+    "ts",
+    "unlogin"
+  ]
+}
